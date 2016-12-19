@@ -1,0 +1,1295 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Base colors for the predefined styles
+ * ------------------------------------------------------------------------------------
+ */
+.root {
+	-style1-color: rgb(119.0, 192.0, 75.0, 0.9);
+	-style2-color: rgb(65.0, 143.0, 203.0, 0.9);
+	-style3-color: rgb(247.0, 209.0, 91.0, 0.9);
+	-style4-color: rgb(157.0, 91.0, 159.0, 0.9);
+	-style5-color: rgb(208.0, 82.0, 95.0, 0.9);
+	-style6-color: rgb(249.0, 132.0, 75.0, 0.9);
+	-style7-color: rgb(174.0, 102.0, 62.0, 0.9);
+}
+
+#toolbar {
+	-fx-padding: 10.0;
+}
+
+#switcher {
+	
+}
+
+#search-field {
+	-fx-background-radius: 100.0px;
+	-fx-pref-width: 200.0px;
+}
+
+.search-icon {
+	-fx-graphic: url("magnifying_glass.png");
+	-fx-opacity: 0.6;
+}
+
+.cancel-search-icon {
+	-fx-graphic: url("delete.png");
+	-fx-opacity: 0.6;
+}
+
+.source-view-scroll-pane, .source-view-scroll-pane:focused {
+	-fx-padding: 0.0;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 0.0;
+	-fx-background-color: transparent;
+	-fx-border-radius: 0.0;
+	-fx-border-insets: 0.0;
+	-fx-border-color: transparent;
+	-fx-fit-to-width: true;
+	-fx-fit-to-height: true;
+}
+
+.source-view-scroll-pane .corner {
+	-fx-background-insets: 0.0px;
+}
+
+#date-picker {
+	-fx-border-color: lightgray transparent transparent transparent;
+	-fx-border-insets: 0.0 6.0 0.0 6.0;
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+	-fx-min-width: 200.0px;
+	-fx-min-height: 180.0px;
+}
+
+#category-tree {
+	-fx-border-color: red;
+	-fx-border-width: 0.0px;
+	-fx-border-insets: 0.0px;
+	-fx-background-insets: 0.0px;
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+}
+
+#category-tree>.virtual-flow>.scroll-bar:horizontal, #category-tree>.virtual-flow>.scroll-bar:horizontal .decrement-arrow,
+	#category-tree>.virtual-flow>.scroll-bar:horizontal .increment-arrow {
+	-fx-pref-height: 0.0;
+}
+
+#category-tree>*>*>*>.tree-cell {
+	-fx-background-color: rgb(210, 210, 210);
+}
+
+#master-detail-pane {
+	-fx-border-color: null;
+}
+
+.calendar-page {
+	-fx-background-color: white;
+}
+
+.calendar-scroll-pane {
+	-fx-background-color: transparent;
+	-fx-border-width: 0.0;
+	-fx-padding: 0.0;
+}
+
+.calendar-scroll-pane>.viewport {
+	-fx-background-color: transparent;
+}
+
+.calendar-scroll-pane {
+	-fx-pannable: true;
+	-fx-hbar-policy: never;
+	-fx-vbar-policy: never;
+}
+
+.navi-button {
+	
+}
+
+.date-text {
+	-fx-font-size: 2.2em;
+}
+
+.split-pane>.split-pane-divider {
+	-fx-padding: 0.0 1.0 0.0 0.0;
+}
+
+.calendar-view {
+	-fx-padding: 1em;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the "days" page.
+ * ------------------------------------------------------------------------------------
+ */
+.day-page-today-label {
+	-fx-font-family: "Helvetica Neue";
+	-fx-font-size: 12em;
+	-fx-text-fill: lightgray;
+}
+
+.day-page-separator-line {
+	-fx-background-color: lightgray;
+	-fx-pref-height: 1.0px;
+}
+
+.day-page-list {
+	-fx-background-insets: 0.0px;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the month panels inside the year view.
+ * ------------------------------------------------------------------------------------
+ */
+.year-popover>*>.border {
+	-fx-fill: linear-gradient(#f6f6f6 50.0%, #e6e6e6 100.0%);
+}
+
+.popover-calendar-entries-pane {
+	-fx-padding: .5em;
+}
+
+.popover-calendar-entries-pane>*>.calendar-entry-title {
+	-fx-padding: 2.0;
+	-fx-font-size: .9em;
+}
+
+.popover-calendar-entries-pane>*>.calendar-entry-time {
+	-fx-padding: 2.0 2.0 2.0 40.0;
+	-fx-font-size: .8em;
+	-fx-text-fill: gray;
+}
+
+.popover-grid-pane {
+	-fx-hgap: 1.0em;
+	-fx-vgap: 1.0em;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the calendar source view.
+ * ------------------------------------------------------------------------------------
+ */
+.calendar-source-view>.titled-pane>.title>.arrow-button .arrow {
+	-fx-opacity: 0.0;
+}
+
+.calendar-source-view>.titled-pane>.title>.arrow-button {
+	-fx-pref-width: 0.0;
+	-fx-pref-height: 0.0;
+}
+
+.calendar-source-view>.titled-pane {
+	-fx-background-color: transparent;
+	-fx-animated: true;
+}
+
+.calendar-source-view>.titled-pane:expanded {
+	
+}
+
+.calendar-source-view>.titled-pane>.title {
+	-fx-font-weight: bold;
+	-fx-background-color: transparent;
+	-fx-border-color: transparent transparent transparent transparent;
+	-fx-border-insets: 1.0 10.0 1.0 10.0;
+}
+
+.calendar-source-view>.titled-pane:collapsed>.title {
+	-fx-border-color: transparent transparent lightgray transparent;
+	-fx-effect: null;
+}
+
+.calendar-source-view>.titled-pane>.content {
+	-fx-border-color: transparent;
+	-fx-padding: 0 20 0 20;
+	-fx-background-color: transparent;
+}
+
+.calendar-source-view>.titled-pane>.title>.arrow-button>.arrow {
+	-fx-pref-width: 0.0;
+	-fx-pref-height: 0.0;
+}
+
+.calendar-source-view>.titled-pane:expanded>* {
+	
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the year month view.
+ * ------------------------------------------------------------------------------------
+ */
+.month-label {
+	-fx-font-size: 18px;
+}
+
+.year-label {
+	-fx-font-size: 18px;
+}
+
+.year-month-pane {
+	-fx-padding: 15 25 15 25;
+}
+
+.year-month-pane>.year-month-header {
+	-fx-padding: 0 0 10 0;
+}
+
+.year-month-pane>.year-month-header>.month-header {
+	
+}
+
+.year-month-pane>.year-month-header>.year-header {
+	
+}
+
+.previous-button, .next-button {
+	-fx-background-color: gray;
+	-fx-pref-width: 8;
+	-fx-pref-height: 8;
+	-fx-max-width: 8;
+	-fx-max-height: 8;
+}
+
+.previous-button:hover, .next-button:hover {
+	-fx-background-color: lightgray;
+}
+
+.previous-button:pressed, .next-button:pressed {
+	-fx-background-color: firebrick;
+}
+
+.previous-button {
+	-fx-shape: "M3,0 V3 L0 1.5 L3,0 Z";
+}
+
+.next-button {
+	-fx-shape: "M0,0 L3 1.5 L0,3 V0 Z";
+}
+
+.year-month-pane>.day-of-week-label {
+	-fx-border-color: transparent transparent lightgray transparent;
+	-fx-padding: 0 0 5 0;
+}
+
+.year-month-pane>.week-label, .year-month-pane>.day-of-week-label {
+	-fx-text-fill: gray;
+	-fx-font-size: 10px;
+}
+
+.year-month-pane>.week-label {
+	-fx-padding: 0 2 0 0;
+	-fx-min-width: 2em;
+	-fx-min-height: 2em;
+}
+
+.year-month-pane>.current-date-label, .year-month-pane>*>.current-date-label,
+	.year-month-pane>*>*>.current-date-label {
+	-fx-text-fill: firebrick;
+}
+
+.year-month-pane>.current-date-border {
+	-fx-border-color: transparent transparent firebrick transparent;
+	-fx-border-width: 2;
+}
+
+.year-month-pane>.month-day {
+	-fx-background-insets: .5px;
+	-fx-min-width: 2em;
+	-fx-min-height: 2em;
+}
+
+.year-month-pane>.day-of-month-label {
+	-fx-text-fill: rgba(0, 0, 0, .66);
+}
+
+.year-month-pane>.day-not-of-month-label {
+	-fx-text-fill: lightgray;
+}
+
+.year-month-pane>.weekend-day {
+	-fx-background-color: rgb(245, 245, 245);
+}
+
+.year-month-pane>.usage-very-low {
+	-fx-background-color: lemonchiffon;
+}
+
+.year-month-pane>.usage-low {
+	-fx-background-color: khaki;
+}
+
+.year-month-pane>.usage-medium {
+	-fx-background-color: gold;
+}
+
+.year-month-pane>.usage-high {
+	-fx-background-color: coral;
+}
+
+.year-month-pane>.usage-very-high {
+	-fx-background-color: salmon;
+}
+
+.year-month-pane>.selected-month-date {
+	-fx-background-color: lightgray;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}
+
+.year-month-pane>.today {
+	-fx-background-color: cornflowerblue;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.popover-calendar-entries-pane {
+	-fx-padding: 10;
+}
+
+.popover-empty-label {
+	-fx-padding: 10;
+	-fx-text-fill: gray;
+	-fx-font-size: 14px;
+}
+
+.popover-calendar-entries-pane>*>.calendar-entry-title {
+	-fx-padding: 2;
+	-fx-font-size: 12px;
+}
+
+.popover-calendar-entries-pane>*>.calendar-entry-time {
+	-fx-padding: 2 2 2 40;
+	-fx-font-size: 10px;
+	-fx-text-fill: gray;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the month view.
+ * ------------------------------------------------------------------------------------
+ */
+.month-pane>.month-day {
+	-fx-padding: 0.0px;
+	-fx-background-insets: 0.0px;
+	-fx-border-color: lightgray transparent transparent transparent;
+	-fx-border-insets: 0.0;
+	-fx-border-width: 1.0 0.0 0.0 0.0;
+}
+
+.month-pane>.month-day:selected {
+	-fx-background-color: skyblue;
+}
+
+.month-pane>.month-day-today, .month-pane>.month-day-current-week {
+	-fx-border-insets: 0.0;
+	-fx-border-width: 5.0 0.0 0.0 0.0;
+}
+
+.month-pane>.month-day-current-week {
+	-fx-border-color: salmon transparent transparent transparent;
+}
+
+.month-pane>.month-day-today {
+	-fx-background-color: lavenderblush;
+	-fx-text-fill: red;
+	-fx-border-color: firebrick transparent transparent transparent;
+}
+
+.month-pane>.month-day>.month-day-entries-pane {
+	-fx-spacing: 1.0px;
+}
+
+.month-pane>.month-day>.month-day-header {
+	-fx-padding: 2.0 4.0 2.0 0.0;
+}
+
+.month-pane>.month-day>*>.day-of-month-label, .month-pane>.month-day>*>.day-not-of-month-label
+	{
+	-fx-alignment: center-right;
+	-fx-font-weight: bold;
+}
+
+.month-pane>.month-day>*>.day-of-month-label {
+	-fx-text-fill: derive(gray, -40.0%);
+}
+
+.month-pane>.month-day>*>.weekend-day {
+	-fx-text-fill: gray;
+}
+
+.month-pane>.month-day>*>.day-not-of-month-label {
+	-fx-text-fill: lightgray;
+}
+
+.month-pane>.month-day>*>.week-of-year-label, .month-pane>.month-day>*>.current-week-of-year-label
+	{
+	-fx-font-size: .8em;
+	-fx-font-weight: bold;
+	-fx-padding: .25em;
+}
+
+.month-pane>.month-day>*>.week-of-year-label {
+	-fx-text-fill: white;
+	-fx-background-color: gray;
+}
+
+.month-pane>.month-day>*>.current-week-of-year-label {
+	-fx-text-fill: lightcoral;
+	-fx-background-color: lavenderblush;
+}
+
+.month-pane>.day-of-week-label, .month-pane>.day-of-weekend-label {
+	-fx-text-fill: derive(gray, -40.0%);
+	-fx-padding: 0.0 0.0 5.0px 0.0;
+	-fx-font-size: 1.1em;
+	-fx-font-weight: bold;
+}
+
+.month-pane>.day-of-weekend-label {
+	-fx-text-fill: derive(gray, 10.0%);
+}
+
+.month-pane>.weekend-day {
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+}
+
+.month-pane>.month-day>.month-day-more-label {
+	-fx-text-fill: gray;
+	-fx-font-weight: bold;
+	-fx-padding: 0.0 0.0 0.0 10.0px;
+}
+
+.month-pane>.month-day>*>.today-label {
+	-fx-text-fill: firebrick;
+	-fx-background-insets: 0.0 4.0px 0.0 4.0px;
+	-fx-alignment: center-right;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the day view.
+ * ------------------------------------------------------------------------------------
+ */
+.day-view {
+	-fx-padding: 0.0 0.0 0.0 0.0;
+}
+
+.day-view-today {
+	
+}
+
+.day-view-weekend-day {
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+}
+
+.half-hour-line {
+	-fx-stroke: rgba(0.0, 0.0, 0.0, 0.075);
+	-fx-line-width: 0.5px;
+}
+
+.full-hour-line {
+	-fx-stroke: rgba(0.0, 0.0, 0.0, 0.15);
+	-fx-line-width: 0.5px;
+}
+
+.current-time-line {
+	-fx-stroke: firebrick;
+}
+
+.early-hour-line, .late-hour-line {
+	-fx-opacity: 0.5;
+}
+
+.early-hours-region, .late-hours-region {
+	-fx-background-color: rgba(200.0, 200.0, 200.0, 0.2);
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the time scale (01:00, 02:00, .... 24:00).
+ * ------------------------------------------------------------------------------------
+ */
+.time-scale {
+	-fx-padding: 0.0 5.0 0.0 5.0;
+}
+
+.time-scale-label {
+	-fx-font-size: .8em;
+	-fx-text-fill: gray;
+}
+
+.current-time-label {
+	-fx-font-size: .8em;
+	-fx-text-fill: firebrick;
+}
+
+.early-hour-label, .late-hour-label {
+	-fx-opacity: 0.5;
+}
+
+.current-time-circle {
+	-fx-stroke: firebrick;
+	-fx-fill: firebrick;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the weekday view.
+ * ------------------------------------------------------------------------------------
+ */
+.weekday-view {
+	
+}
+
+.weekday-view-today {
+	-fx-background-color: lavenderblush;
+}
+
+.weekday-view-weekend-day {
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the week view.
+ * ------------------------------------------------------------------------------------
+ */
+.weekday-header-label, .weekday-header-label-today {
+	-fx-font-weight: bold;
+	-fx-padding: 0.0 0.0 4.0 0.0;
+	-fx-border-insets: 0.0 0.0 0.0 0.0;
+	-fx-alignment: center;
+	-fx-border-color: transparent transparent lightgray transparent;
+}
+
+.weekday-header-label-today {
+	-fx-text-fill: firebrick;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the all day view.
+ * ------------------------------------------------------------------------------------
+ */
+.all-day-view {
+	-fx-min-height: 2.0em;
+	-fx-row-height: 20.0px; /* custom styleable property */
+	-fx-row-spacing: 2.0px; /* custom styleable property */
+	-fx-column-spacing: 2.0px; /* custom styleable property */
+
+	/*
+	 * Parsing custom styleable INSETS properties does not work until u40.
+	 * Use API to change this property if needed.
+	 */
+	/*-fx-extra-padding: 2 0 9 0; */ /* custom styleable property */
+}
+
+.all-day-label {
+	-fx-font-weight: normal;
+}
+
+.all-day-background-region {
+	-fx-border-width: 0.0 0.0 5.0 0.0;
+	-fx-border-color: transparent transparent lightgray transparent;
+}
+
+.all-day-background-region-today {
+	-fx-border-color: transparent transparent firebrick transparent;
+	-fx-background-color: lavenderblush;
+}
+
+.all-day-background-region-weekend {
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the calendar list view.
+ * ------------------------------------------------------------------------------------
+ */
+.agenda-view>.list-view {
+	-fx-background-color: transparent;
+}
+
+.agenda-view>.list-view>.virtual-flow>.scroll-bar:vertical, .agenda-view>.list-view>.virtual-flow>.scroll-bar:vertical .decrement-arrow,
+	.agenda-view>.list-view>.virtual-flow>.scroll-bar:vertical .increment-arrow
+	{
+	-fx-pref-width: 0.0;
+}
+
+.agenda-view-list-cell {
+	-fx-background-color: transparent;
+}
+
+.agenda-view-title-label {
+	-fx-padding: 4.0 4.0 4.0 0.0;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}
+
+.agenda-view-time-label {
+	-fx-text-fill: gray;
+}
+
+.agenda-view-body {
+	-fx-padding: 0.0 0.0 20.0 0.0;
+	-fx-vgap: 5.0px;
+	-fx-hgap: 8.0px;
+}
+
+.agenda-view-body-separator {
+	-fx-pref-height: 1.0;
+	-fx-border-color: lightgray;
+	-fx-border-style: dashed none none none;
+}
+
+.agenda-view-header {
+	-fx-border-color: transparent transparent lightgray transparent;
+	-fx-border-width: 3.0;
+	-fx-border-insets: 0.0 0.0 4.0 0.0;
+}
+
+.agenda-view-header-today {
+	-fx-border-color: transparent transparent firebrick transparent;
+}
+
+.agenda-view-date-label, .agenda-view-weekday-label {
+	-fx-padding: 0.0 0.0 4.0 0.0;
+	-fx-font-size: .8em;
+	-fx-font-weight: bold;
+	-fx-text-fill: gray;
+}
+
+.agenda-view-date-label-today, .agenda-view-weekday-label-today {
+	-fx-text-fill: firebrick;
+}
+
+.agenda-view-placeholder-label {
+	-fx-text-fill: gray;
+	-fx-font-size: 2.5em;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed by the search result list view.
+ * ------------------------------------------------------------------------------------
+ */
+.search-result-view, .search-result-view:focused {
+	-fx-pref-width: 200px;
+	-fx-background-color: rgb(245.0, 245.0, 245.0);
+}
+
+.search-result-view-placeholder-label {
+	-fx-text-fill: gray;
+	-fx-font-size: 1.5em;
+}
+
+/* annoying, but must be done, because cell styling is so explicit in modena.css */
+.list-view:focused>.virtual-flow>.clipped-container>.sheet>.search-result-cell:filled:focused:selected
+	{
+	-fx-background-color: rgb(235.0, 235.0, 235.0);
+}
+
+.search-result-cell:selected {
+	-fx-background-color: rgb(235.0, 235.0, 235.0);
+}
+
+.search-result-cell {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent transparent lightgray transparent;
+	-fx-border-insets: 0.0 6.0 0.0 6.0;
+}
+
+.search-result-title-label {
+	-fx-font-weight: bold;
+	-fx-font-size: .9em;
+	-fx-text-fill: black;
+}
+
+.search-result-date-label, .search-result-time-label {
+	-fx-font-size: .8em;
+	-fx-text-fill: gray;
+}
+
+.cursor-default {
+	-fx-cursor: default;
+}
+
+.cursor-north-resize {
+	-fx-cursor: n-resize;
+}
+
+.cursor-south-resize {
+	-fx-cursor: s-resize;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Default styles for calendar entries.
+ * ------------------------------------------------------------------------------------
+ */
+.default-style-entry {
+	-fx-background-color: magenta;
+	-fx-background-radius: 0.0px;
+	-fx-background-insets: 0.0 2.0 0.0 2.0;
+	-fx-border-insets: 0.0 0.0 0.0 2.0;
+	-fx-border-width: 0.0 0.0 0.0 4.0;
+}
+
+.default-style-entry:dragged {
+	-fx-opacity: 0.5;
+}
+
+.default-style-entry:dragged-start {
+	-fx-opacity: 0.0;
+}
+
+.default-style-entry:dragged-end {
+	-fx-opacity: 0.0;
+}
+
+.default-style-entry:selected {
+	-fx-border-width: 0.0;
+}
+
+.default-style-entry-time-label {
+	-fx-font-size: .9em;
+	-fx-padding: 4.0 4.0 2.0 4.0;
+}
+
+.default-style-entry-title-label {
+	-fx-font-size: .9em;
+	-fx-font-weight: bold;
+	-fx-padding: 0.0 4.0 0.0 4.0;
+}
+
+.default-style-entry-title-label-full-day {
+	-fx-font-size: .9em;
+	-fx-font-weight: bold;
+	-fx-padding: 0.0 4.0 0.0 4.0;
+}
+
+.default-style-entry:selected>*>.default-style-entry-time-label {
+	-fx-text-fill: white;
+}
+
+.default-style-entry:selected>*>.default-style-entry-title-label {
+	-fx-text-fill: white;
+}
+
+.default-style-visibility-checkbox>.box {
+	
+}
+
+.default-style-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, -fx-body-color;
+	-fx-background-radius: 3.0, 2.0, 1.0;
+	-fx-padding: 0.166667em 0.166667em 0.25em 0.25em; /* 2 2 3 3 */
+}
+
+.default-style-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, -fx-body-color;
+	-fx-background-insets: -0.2, 1.0, 2.0, -1.4, 2.6;
+	-fx-background-radius: 3.0, 2.0, 1.0, 4.0, 1.0;
+}
+
+.default-style-entry-popover-title {
+	-fx-text-fill: red !important;
+}
+
+/* Small entries */
+.default-style-entry-small {
+	-fx-padding: 0.15em 0.5em 0.15em 0.5em;
+}
+
+.default-style-entry-small-only, .default-style-entry-small-last {
+	-fx-background-insets: 0.0 2.0 0.0 0.0;
+}
+
+.default-style-entry-small:selected>*>.default-style-entry-small-title-label
+	{
+	-fx-font-size: .9em;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.default-style-entry-small:selected>*>.default-style-entry-small-time-label
+	{
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.default-style-entry-small:selected>*>*>.default-style-icon,
+	.default-style-entry-small:selected>*>*>.default-style-icon-small {
+	-fx-stroke: white;
+	-fx-fill: white;
+}
+
+.default-style-entry-small-time-label {
+	-fx-font-size: 0.8em;
+	-fx-text-fill: gray;
+}
+
+.default-style-entry-small-time-label-full-day {
+	-fx-font-size: 0.8em;
+	-fx-text-fill: derive(gray, -25.0%);
+}
+
+.default-style-entry-small-title-label {
+	-fx-text-fill: derive(gray, -40.0%);
+}
+
+.default-style-entry-small-full-day {
+	
+}
+
+.default-style-entry-small-full-day:selected>*>.default-style-entry-small-time-label
+	{
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.default-style-entry-small-full-day:selected>*>.default-style-entry-small-title-label
+	{
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 1 (green)
+ * ------------------------------------------------------------------------------------
+ */
+.style1-icon, .style1-icon-small {
+	-fx-fill: -style1-color;
+	-fx-stroke: -style1-color;
+}
+
+.style1-entry {
+	-fx-background-color: derive(-style1-color, 70.0%);
+	-fx-border-color: -style1-color;
+}
+
+.style1-entry:selected {
+	-fx-background-color: -style1-color;
+}
+
+.style1-entry-time-label, .style1-entry-title-label {
+	-fx-text-fill: derive(-style1-color, -30.0%);
+}
+
+.style1-entry-small:selected {
+	-fx-background-color: -style1-color;
+}
+
+.style1-entry-small-full-day {
+	-fx-background-color: derive(-style1-color, 70.0%);
+}
+
+.style1-entry-small-full-day:selected {
+	-fx-background-color: -style1-color;
+}
+
+.style1-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style1-color, 70.0%);
+}
+
+.style1-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style1-color, 70.0%);
+}
+
+.style1-entry-popover-title {
+	-fx-text-fill: derive(-style1-color, -50.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 2 (blue)
+ * ------------------------------------------------------------------------------------
+ */
+.style2-icon, .style2-icon-small {
+	-fx-fill: -style2-color;
+	-fx-stroke: -style2-color;
+}
+
+.style2-entry {
+	-fx-background-color: yellowgreen;
+	-fx-border-color: -style2-color;
+}
+
+.style2-entry:selected {
+	-fx-background-color: -style2-color;
+}
+
+.style2-entry-time-label, .style2-entry-title-label {
+	-fx-text-fill: derive(-style2-color, -50.0%);
+}
+
+.style2-entry-small:selected {
+	-fx-background-color: -style2-color;
+}
+
+.style2-entry-small-full-day {
+	-fx-background-color: derive(-style2-color, 70.0%);
+}
+
+.style2-entry-small-full-day:selected {
+	-fx-background-color: -style2-color;
+}
+
+.style2-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style2-color, 70.0%);
+}
+
+.style2-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style2-color, 70.0%);
+}
+
+.style2-entry-popover-title {
+	-fx-text-fill: derive(-style2-color, -30.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 3 (yellow)
+ * ------------------------------------------------------------------------------------
+ */
+.style3-icon, .style3-icon-small {
+	-fx-fill: -style3-color;
+	-fx-stroke: -style3-color;
+}
+
+.style3-entry {
+	-fx-background-color: derive(-style3-color, 70.0%);
+	-fx-border-color: -style3-color;
+}
+
+.style3-entry:selected {
+	-fx-background-color: -style3-color;
+}
+
+.style3-entry-time-label, .style3-entry-title-label {
+	-fx-text-fill: derive(-style3-color, -50.0%);
+}
+
+.style3-entry-small:selected {
+	-fx-background-color: -style3-color;
+}
+
+.style3-entry-small-full-day {
+	-fx-background-color: derive(-style3-color, 70.0%);
+}
+
+.style3-entry-small-full-day:selected {
+	-fx-background-color: -style3-color;
+}
+
+.style3-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style3-color, 70.0%);
+}
+
+.style3-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style3-color, 70.0%);
+}
+
+.style3-entry-popover-title {
+	-fx-text-fill: derive(-style3-color, -30.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 4 (purple)
+ * ------------------------------------------------------------------------------------
+ */
+.style4-icon, .style4-icon-small {
+	-fx-fill: -style4-color;
+	-fx-stroke: -style4-color;
+}
+
+.style4-entry {
+	-fx-background-color: derive(-style4-color, 70.0%);
+	-fx-border-color: -style4-color;
+}
+
+.style4-entry:selected {
+	-fx-background-color: -style4-color;
+}
+
+.style4-entry-time-label, .style4-entry-title-label {
+	-fx-text-fill: derive(-style4-color, -50.0%);
+}
+
+.style4-entry-small:selected {
+	-fx-background-color: -style4-color;
+}
+
+.style4-entry-small-full-day {
+	-fx-background-color: derive(-style4-color, 70.0%);
+}
+
+.style4-entry-small-full-day:selected {
+	-fx-background-color: -style4-color;
+}
+
+.style4-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style4-color, 70.0%);
+}
+
+.style4-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style4-color, 70.0%);
+}
+
+.style4-entry-popover-title {
+	-fx-text-fill: derive(-style4-color, -30.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 5 (red)
+ * ------------------------------------------------------------------------------------
+ */
+.style5-icon, .style5-icon-small {
+	-fx-fill: -style5-color;
+	-fx-stroke: -style5-color;
+}
+
+.style5-entry {
+	-fx-background-color: derive(-style5-color, 70.0%);
+	-fx-border-color: -style5-color;
+}
+
+.style5-entry:selected {
+	-fx-background-color: -style5-color;
+}
+
+.style5-entry-time-label, .style5-entry-title-label {
+	-fx-text-fill: derive(-style5-color, -50.0%);
+}
+
+.style5-entry-small:selected {
+	-fx-background-color: -style6-color;
+}
+
+.style5-entry-small-full-day {
+	-fx-background-color: derive(-style5-color, 70.0%);
+}
+
+.style5-entry-small-full-day:selected {
+	-fx-background-color: -style5-color;
+}
+
+.style5-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style5-color, 70.0%);
+}
+
+.style5-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style5-color, 70.0%);
+}
+
+.style5-entry-popover-title {
+	-fx-text-fill: derive(-style5-color, -30.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 6 (orange)
+ * ------------------------------------------------------------------------------------
+ */
+.style6-icon, .style6-icon-small {
+	-fx-fill: -style6-color;
+	-fx-stroke: -style6-color;
+}
+
+.style6-entry {
+	-fx-background-color: derive(-style6-color, 70.0%);
+	-fx-border-color: -style6-color;
+}
+
+.style6-entry:selected {
+	-fx-background-color: -style6-color;
+}
+
+.style6-entry-time-label, .style6-entry-title-label {
+	-fx-text-fill: derive(-style6-color, -50.0%);
+}
+
+.style6-entry-small:selected {
+	-fx-background-color: -style6-color;
+}
+
+.style6-entry-small-full-day {
+	-fx-background-color: derive(-style6-color, 70.0%);
+}
+
+.style6-entry-small-full-day:selected {
+	-fx-background-color: -style6-color;
+}
+
+.style6-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style6-color, 70.0%);
+}
+
+.style6-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style6-color, 70.0%);
+}
+
+.style6-entry-popover-title {
+	-fx-text-fill: derive(-style6-color, -30.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles needed for calendar type 7 (brown)
+ * ------------------------------------------------------------------------------------
+ */
+.style7-icon, .style7-icon-small {
+	-fx-fill: -style7-color;
+	-fx-stroke: -style7-color;
+}
+
+.style7-entry {
+	-fx-background-color: derive(-style7-color, 70.0%);
+	-fx-border-color: -style7-color;
+}
+
+.style7-entry:selected {
+	-fx-background-color: -style7-color;
+}
+
+.style7-entry-time-label, .style7-entry-title-label {
+	-fx-text-fill: derive(-style7-color, -50.0%);
+}
+
+.style7-entry-small:selected {
+	-fx-background-color: -style7-color;
+}
+
+.style7-entry-small-full-day {
+	-fx-background-color: derive(-style7-color, 70.0%);
+}
+
+.style7-entry-small-full-day:selected {
+	-fx-background-color: -style7-color;
+}
+
+.style7-visibility-checkbox>.box {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border,
+		-fx-inner-border, derive(-style7-color, 70.0%);
+}
+
+.style7-visibility-checkbox:focused>.box {
+	-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color,
+		-fx-faint-focus-color, derive(-style7-color, 70.0%);
+}
+
+.style7-entry-popover-title {
+	-fx-text-fill: derive(-style7-color, -30.0%) !important;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Styles for the accordion popover.
+ * ------------------------------------------------------------------------------------
+ */
+.popover-header {
+	-fx-padding: 10.0 0.0 10.0 10.0;
+	-fx-font-weight: bold;
+	-fx-border-color: transparent transparent lightgray transparent;
+	-fx-border-insets: 0.0 10.0 0.0 10.0;
+}
+
+.popover-header>.title {
+	-fx-padding: 0;
+	-fx-text-fill: green;
+	-fx-font-size: 16.0px;
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+.popover-header>.subtitle {
+	-fx-padding: 0;
+	-fx-text-fill: gray;
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+.popover-footer {
+	-fx-padding: 10.0 10.0 10.0 10.0;
+}
+
+.popover-accordion>.titled-pane>.title>.arrow-button .arrow {
+	-fx-opacity: 0.0;
+}
+
+.popover-accordion>.titled-pane>.title>.arrow-button {
+	-fx-pref-width: 0.0;
+	-fx-pref-height: 0.0;
+}
+
+.popover-accordion>.titled-pane {
+	-fx-background-color: transparent;
+	-fx-animated: true;
+	-fx-text-fill: gray;
+}
+
+.popover-accordion>.titled-pane:expanded {
+	-fx-text-fill: gray;
+}
+
+.popover-accordion>.titled-pane>.title {
+	-fx-background-color: transparent;
+	-fx-border-style: dashed;
+	-fx-border-color: lightgray transparent transparent transparent;
+	-fx-border-insets: 1.0 10.0 1.0 10.0;
+}
+
+.popover-accordion>.first-titled-pane>.title {
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+.popover-accordion>.titled-pane:collapsed>.title {
+	-fx-border-color: lightgray transparent transparent transparent;
+}
+
+.popover-accordion>.first-titled-pane:collapsed>.title {
+	-fx-border-color: transparent transparent transparent transparent;
+}
+
+.popover-accordion>.titled-pane>.content {
+	-fx-border-color: transparent;
+	-fx-background-color: rgb(245, 245, 235, .5);
+	-fx-border-color: linear-gradient(to bottom, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, 0));
+	-fx-border-width: 6 0 0 0;
+	-fx-padding: 20.0;
+}
+
+.popover-accordion>.titled-pane>.title>.arrow-button>.arrow {
+	-fx-pref-width: 0.0;
+	-fx-pref-height: 0.0;
+}
+
+.popover-accordion>.titled-pane:expanded>* {
+	-fx-background-color: rgba(240.0, 240.0, 240.0, 0.95);
+}
+
+.summary-text {
+	-fx-text-fill: gray;
+}

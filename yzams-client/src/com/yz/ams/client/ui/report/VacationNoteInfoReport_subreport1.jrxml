@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="VacationNoteInfoReport_subreport1" pageWidth="560" pageHeight="555" orientation="Landscape" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="auditorName2" class="java.lang.String">
+		<fieldDescription><![CDATA[auditorName2]]></fieldDescription>
+	</field>
+	<field name="createTime" class="java.lang.String">
+		<fieldDescription><![CDATA[createTime]]></fieldDescription>
+	</field>
+	<field name="endTime" class="java.lang.String">
+		<fieldDescription><![CDATA[endTime]]></fieldDescription>
+	</field>
+	<field name="appliantName" class="java.lang.String">
+		<fieldDescription><![CDATA[appliantName]]></fieldDescription>
+	</field>
+	<field name="vacationDays" class="java.lang.Double">
+		<fieldDescription><![CDATA[vacationDays]]></fieldDescription>
+	</field>
+	<field name="vacationType" class="java.lang.String">
+		<fieldDescription><![CDATA[vacationType]]></fieldDescription>
+	</field>
+	<field name="memo" class="java.lang.String">
+		<fieldDescription><![CDATA[memo]]></fieldDescription>
+	</field>
+	<field name="startTime" class="java.lang.String">
+		<fieldDescription><![CDATA[startTime]]></fieldDescription>
+	</field>
+	<field name="auditorName1" class="java.lang.String">
+		<fieldDescription><![CDATA[auditorName1]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="195" splitType="Stretch">
+			<staticText>
+				<reportElement x="70" y="71" width="35" height="17"/>
+				<textElement>
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[本人因]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="105" y="71" width="396" height="17"/>
+				<textElement>
+					<font fontName="SimSun" isUnderline="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{memo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="49" y="88" width="25" height="17"/>
+				<textElement>
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[特于]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="74" y="88" width="111" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" isUnderline="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{startTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="185" y="88" width="33" height="17"/>
+				<textElement>
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[起，请]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="283" y="88" width="30" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" isUnderline="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{vacationDays}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="313" y="88" width="100" height="17"/>
+				<textElement>
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[天，望批准。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="111" width="67" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[请假人：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="412" y="111" width="100" height="17"/>
+				<textElement textAlignment="Left">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{appliantName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="345" y="128" width="67" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[时间：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="412" y="128" width="100" height="17"/>
+				<textElement textAlignment="Left">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{createTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="345" y="145" width="67" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[审批人：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="412" y="145" width="100" height="17"/>
+				<textElement textAlignment="Left">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{auditorName2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="236" y="29" width="100" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" size="12" isBold="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[请假条]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="218" y="88" width="65" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" isUnderline="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vacationType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="49" y="54" width="46" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" isUnderline="true" pdfFontName="STSong-Light"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{auditorName1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="101" y="54" width="43" height="17"/>
+				<textElement>
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="71" width="11" height="17"/>
+				<textElement textAlignment="Right">
+					<font fontName="SimSun" pdfFontName="STSong-Light"/>
+				</textElement>
+				<text><![CDATA[，]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
